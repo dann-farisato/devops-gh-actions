@@ -15,6 +15,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-
+      - name: List github context object
+        run: echo "${{ toJson(github) }}"
       # - name: Run Tests
       #   run: npm test
